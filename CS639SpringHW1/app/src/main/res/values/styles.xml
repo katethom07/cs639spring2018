@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextFormat">
+        <item name="android:textColor">#E3E3E3</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:background">@drawable/rounded_cornerbg</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
 </resources>

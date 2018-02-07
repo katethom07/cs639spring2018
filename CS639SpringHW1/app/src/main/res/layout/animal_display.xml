@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <TextView
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/bird_img"
+            android:src="@drawable/bird"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            style="@style/TextFormat"
+            android:id="@+id/bird_text"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bird_fact" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/cat_img"
+            android:src="@drawable/cat"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            style="@style/TextFormat"
+            android:id="@+id/cat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/cat_fact" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/dog_img"
+            android:src="@drawable/dog"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            style="@style/TextFormat"
+            android:id="@+id/dog_text"
+            android:text="@string/dog_fact" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
         android:gravity="center_horizontal"
-        android:text="Start editing this file"/>
-</RelativeLayout>
+        android:layout_weight=".25"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/blackSquare"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+             android:background="#000"/>
+        <ImageView
+            android:id="@+id/blueSquare"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="#0000ff"
+            />
+        <ImageView
+            android:id="@+id/greenSquare"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="#7fff00"
+            />
+        <ImageView
+            android:id="@+id/cyanSquare"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="#00FFFF"
+            />
+        <ImageView
+            android:id="@+id/redSquare"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="#ff0000"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
